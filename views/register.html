@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="divLogo">
+                <a href="/home"><img class="logoprincipal" src="/img/images/logo-mercado-liebre.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Campos del Formulario -->
+        <div class="divFormRegister">
+            <form action="/home">
+                <h2 class="tituloRegister">Register</h2>
+                <input type="text" name="Nombre Completo" placeholder="Nombre Completo" class="elementoForm">
+                <input type="text" name="Nombre de Usuario" placeholder="Nombre de Usuario">
+                <input type="date" name="Fecha de Nacimiento" placeholder="Fecha de Nacimiento" class="fechaNac">
+                <input type="text" name="Domicilio" placeholder="Domicilio">
+                <div class="divTipoCuenta">
+                    <label for="cuenta" class="tipoCuenta">Tipo de cuenta:</label>
+                    <select name="cuenta" class="opcionesCuenta">
+                        <option value="cuentaNormal">Normal</option>
+                        <option value="cuentaEmpresa">Empresa</option>
+                    </select>
+                </div>
+                <!-- Checkbox Categorías -->
+                <label for="categoriasInteres" class="labelCategorias" class="labelCategorias">Categorías de Interés</label>
+                <div class="checkboxCategorias">
+                    <div>
+                        <label for="electro">Electro</label>
+                        <input type="checkbox" name="categoriasInteres" value="electro" id="electro">
+                    </div>
+                    <div>
+                        <label for="moda">Moda</label>
+                        <input type="checkbox" name="categoriasInteres" value="moda" id="moda">
+                    </div>
+                    <div>
+                        <label for="hogar">Hogar</label>
+                        <input type="checkbox" name="categoriasInteres" value="hogar" id="hogar">
+                    </div>
+                    <div>
+                        <label for="jugueteria">Juguetería</label>
+                        <input type="checkbox" name="categoriasInteres" value="jugueteria" id="jugueteria">
+                    </div>
+                    <div>
+                        <label for="vidaSana">Vida Sana</label>
+                        <input type="checkbox" name="categoriasInteres" value="vidaSana" id="vidaSana">
+                    </div>
+                </div>
+
+                <div class="divImagenPerfil">
+                    <label>Seleccionar una imagen para el perfil:</label>
+                    <input type="file" name="avatar" accept=".jpg,.png" multiple>
+                </div>
+
+                <input type="password" name="contraseña" placeholder="Ingresar contraseña">
+                <input type="password" name="confirmarContraseña" placeholder="Confirmar contraseña">
+
+                <!-- Botones -->
+                <div class="divBotonEnviar">
+                    <button type="submit" class="botonEnviar">
+                       <span class="botonInterior">Enviar</span>          
+                    </button>
+                </div>
+                
+                <div class="divBotonBorrar">
+                    <button type="reset" class="botonBorrar">
+                        <span class="botonInterior">Borrar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
