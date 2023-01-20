@@ -59,6 +59,8 @@ div input {
     flex-direction: row;
     margin-right: 15px;
     width: 33.33%;
+    justify-content: center;
+    align-items: center;
 }
 
 .divLogo {
@@ -70,6 +72,8 @@ div input {
     right: 25px;
     top: 3px
 }
+
+
 
 div button.lupa {
     border-radius: 4px;
@@ -90,6 +94,10 @@ div button.lupa {
     align-items: center;
     margin-left: 28px;
     margin-right: -28px;
+}
+
+.formSearchbar input {
+    padding: 8px 66px 8px 6px
 }
 
 
